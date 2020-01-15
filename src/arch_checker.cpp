@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
 
   // loading e_machine values and their meanings
   std::map<int, std::string> machineCodes;
-  loadMachineCodes("machinecodes.csv", machineCodes);
+  loadMachineCodes("doc/machinecodes.csv", machineCodes);
 
   // finding the corresponding architecture
   std::cout << machineCodes[e_machine] << std::endl;
