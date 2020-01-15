@@ -23,5 +23,10 @@ test-self: checker
 	@echo "checking itself:"
 	@bin/arch_checker bin/arch_checker
 
+check-provided: checker
+	@echo "checking provided file:"
+	@mkdir -p test/provided
+	@bin/arch_checker test/provided/*
+
 clean:
 	@rm bin/*
